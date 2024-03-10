@@ -2,19 +2,28 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-h1 h2 h3 p {
-    margin-bottom: 0;
-    margin-top: 0;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
     margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
 }
 
 .visually-hidden {
