@@ -1,5 +1,5 @@
 body {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #fff;
 }
@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 ul, ol  {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -251,6 +251,7 @@ button {
     text-align: center;
     color: #2e2f42;
     padding: 32px 16px 16px;
+    margin-bottom: 8px;
 }
 
 .team-text {
