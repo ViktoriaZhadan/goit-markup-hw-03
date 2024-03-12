@@ -1,12 +1,14 @@
 body {
     font-family: 'roboto', sans-serif;
+    color: #434455;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
-ul {
+ul, ol  {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -26,6 +28,10 @@ address {
     font-style: normal;
 }
 
+button {
+    cursor: pointer;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -40,7 +46,7 @@ address {
 }
 
 .container {
-   max-width: ;width: 1158px;
+   width: 1158px;
    padding-left: 15px;
    padding-right: 15px;
    margin: 0 auto;
@@ -63,7 +69,7 @@ address {
 .header-logo {
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -94,6 +100,11 @@ address {
     display: block;
 }
 
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: #404bbf;
+}
+
 .header-address {
    font-style: normal;
    margin-left: auto;
@@ -104,8 +115,28 @@ address {
    gap: 40px;
 }
 
+.header-address-link {
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #434455;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+    color: #404bbf;
+}
+
 .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
     background: #2e2f42;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-title {
@@ -115,19 +146,42 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin:0 auto 48px;
+    max-width: 496px;
 }
 
 .hero-buy-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
     color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    background: #4d5ae5;
 }
 
-.features {}
+.hero-buy-btn:hover,
+.hero-buy-btn:focus {
+    background-color: #404bbf;      
+}
 
-.features-list {}
+.features {
+    margin-top: 167px;
+    margin-bottom: 108px;
+}
+
+.features-container {}
+
+.features-list {
+   display: flex;
+   gap: 24px;
+}
 
 .features-item {}
 
@@ -137,6 +191,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin: 8px;
 }
 
 .features-item-text {
@@ -144,28 +199,40 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    width: 264px;
 }
-
-
-
 
 
 .team {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team-container {
 }
 
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+    }
 
-.team-item {}
+.team-item {
+      background-color: #ffffff;
+      width: calc((100% - 3 * 24px) / 4);
+      border-radius: 0px 0px 4px 4px;
+}
 
 .team-image {}
 
@@ -176,17 +243,27 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding: 32px 16px 16px;
 }
 
 .team-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    padding-bottom: 32px;
 }
 
-.portfolio {}
+
+
+
+.portfolio {
+    margin-bottom: 120px;
+}
+
+.portfolio-comtainer {}
 
 .portfolio-title {
     font-weight: 700;
@@ -195,13 +272,21 @@ address {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-top: 118px;
+    margin-bottom: 72px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 .portfolio-item {}
 
-.portfolio-image {}
+.portfolio-image {
+
+}
 
 .portfolio-sudtitle {
     font-weight: 500;
@@ -209,27 +294,42 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-bottom: 8px; 
+    padding-left: 16px;
 }
 
 .portfolio-text {
+    font-weight: 400px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding-left: 16px;
 }
 
 .footer {
     background: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
+.footer-container {
+ 
+}
 
 .footer-logo {
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px;
+    display: inline-block;
+    
 }
 
 .footer-logo span {
@@ -242,8 +342,11 @@ address {
 }
 
 .footer-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd
+    color: #f4f4fd;
+    max-width: 264px;
+    height: 72px;
 }
